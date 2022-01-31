@@ -2,8 +2,26 @@
     margin: 0;
     padding: 0;
 }
-.hero-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.682),rgba(0,0,0,0.711)),
-    url('./images/studio-republic-qeij_dhDhGg-unsplash.jpg') no-repeat center / cover;
-}
+a:active {
+    color: black;
+  }
+  .hero-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0,0,0,0.611)),
+      url('./images/studio-republic-qeij_dhDhGg-unsplash.jpg') no-repeat center / cover;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+  }
+  .hero-content{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+  }
+  .heading{
+    
+  }
+  .flex{
+    
+  }
+
+
+
  
