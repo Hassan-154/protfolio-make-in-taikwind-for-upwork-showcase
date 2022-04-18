@@ -13,7 +13,7 @@ function NavBar(){
     
         {/*for mobile*/}
         <div className=''>
-      <nav className="bg-zinc-900 w-screen lg:hidden">
+      <nav className="bg-zinc-900 w-screen xl:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -25,7 +25,7 @@ function NavBar(){
                 />
               </div>
             </div>
-            <div className="-mr-2 flex lg:hidden">
+            <div className="-mr-2 flex xl:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -82,7 +82,7 @@ function NavBar(){
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="lg:hidden" id="mobile-menu">
+            <div className="xl:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a 
                   href="#"
@@ -131,7 +131,7 @@ function NavBar(){
       </nav>
     </div>
        {/*for desktop*/}
-       <div className=" h-screen bg-zinc-900 w-64 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative lg:translate-x-0 transition duration-200 ease-in-out">
+       <div className=" h-screen bg-zinc-900 w-64 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative xl:translate-x-0 transition duration-200 ease-in-out">
         
                 <div className='w-64 h-screen flex justify-center'>
 
@@ -161,7 +161,7 @@ function NavBar(){
 
                <div className='text-white flex justify-center'
                >
-                     <div className='absolute top-10'>
+                     <div className='absolute top-4'>
                        {/* picture circle div */}
                        <div className='w-48'>
                          <img className='rounded-full border-8 border-gray-700' src={myImg}/>

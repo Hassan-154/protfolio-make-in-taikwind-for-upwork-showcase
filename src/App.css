@@ -6,7 +6,7 @@ a:active {
     color: black;
   }
   .hero-background{
-    background: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0,0,0,0.611)),
+    background: linear-gradient(rgba(0, 0, 0, 0.782),rgba(0,0,0,0.751)),
       url('./images/studio-republic-qeij_dhDhGg-unsplash.jpg') no-repeat center / cover;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='bg-slate-50 w-full'>
       <NavBar/>
-      <div className='lg:ml-64'>
+      <div className='xl:ml-64'>
       <HeroSection />
       <AboutMe/>
       <WhatIDo/>
