@@ -9,7 +9,7 @@ function NavBar(){
   const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <div className='fixed text-xl z-20'>
+      <div className='fixed text-xl z-20 font-play '>
     
         {/*for mobile*/}
         <div className=''>

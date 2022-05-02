@@ -7,7 +7,7 @@ import WhatIDo from './components/WhatIDo';
 
 function App() {
   return (
-    <div className='bg-slate-50 w-full'>
+    <div className='bg-slate-50 w-full font-play'>
       <NavBar/>
       <div className='xl:ml-64'>
       <HeroSection />
