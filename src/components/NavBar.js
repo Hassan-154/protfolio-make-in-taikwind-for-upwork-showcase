@@ -9,7 +9,7 @@ function NavBar(){
   const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <div className='fixed text-xl z-20 font-play '>
+      <div className='fixed text-xl z-20'>
     
         {/*for mobile*/}
         <div className=''>
@@ -140,22 +140,22 @@ function NavBar(){
                   <a className=" hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
                   <Link smooth={true} to='hero' activeClassName='text-black'>Home</Link>
                   </a>
+                  <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
+                    <Link smooth={true} to='skills'>Skills</Link>
+                  </a>
                   
                   <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
                     <Link smooth={true} to='about'>About Me</Link>
                   </a>
+
                   <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
-                    What I DO
+                    <Link smooth={true} to='prot'> Portfolio</Link>
                   </a>
+
                   <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
-                    Resume
+                    <Link smooth={true} to='contact'> Contact</Link>
                   </a>
-                  <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
-                    Portfolio
-                  </a>
-                  <a className="hover:text-emerald-500 cursor-pointer font-medium text-center pb-5 transition duration-200">
-                    Contact
-                  </a>
+               
                 </nav>
                 </div>
 

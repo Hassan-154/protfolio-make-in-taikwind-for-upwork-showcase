@@ -5,7 +5,6 @@ module.exports = {
     fontFamily: {
       play: ["Oswald"],
   },
-   
     container: {
       center: true,
     },

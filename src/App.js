@@ -3,19 +3,20 @@ import AboutMe from './components/AboutMe';
 import HeroSection from './components/HeroSection';
 import NavBar from './components/NavBar';
 import Prot from './components/Prot'
-import WhatIDo from './components/WhatIDo';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className='bg-slate-50 w-full font-play'>
+    <div className='bg-zinc-800 w-full'>
       <NavBar/>
       <div className='xl:ml-64'>
-      <HeroSection />
+      <HeroSection/>
+      <Skills/>
       <AboutMe/>
-      <WhatIDo/>
       <Prot/>
+      <Contact/>
       </div>
-      
     </div>
 
   );
