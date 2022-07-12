@@ -1,33 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
-}
-a:active {
-    color: black;
+    
   }
-  .hero-background{
-    background: linear-gradient(rgba(0, 0, 0, 0.782),rgba(0,0,0,0.751)),
-      url('./images/studio-republic-qeij_dhDhGg-unsplash.jpg') no-repeat center / cover;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-  }
-  .hero-content{
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-  }
-.service__logo{
-  color: rgb(16 185 129);
-}
-
-h1::before{
-    border-left: 6px solid green;
-    height: 100px;
-}
-h1::after{
-  border-left: 6px solid rgb(106, 124, 106);
-  height: 100px;
-}
-
 
 
 

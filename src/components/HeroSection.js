@@ -1,15 +1,44 @@
 import React,{useState} from 'react'
-
+import Typical from 'react-typical'
+import Zoom from 'react-reveal/Zoom';
 
 function HeroSection() {
     return (
-<section class="hero-background text-white flex items-center w-full h-screen justify-center" id='hero'>
-  <div className='hero-content text-center max-w-2xl pt-20'>
-  <h1 className='text-4xl pb-4 tracking-wide font-bold sm:text-6xl pb-9'>Hi, I'm <span className='text-emerald-500'>Hdobi Taylor.</span> A Web Developer.</h1>
- <p className='tracking-wide pb-4 sm:text-lg pb-9'>I'm a Web Developer, I love to create beautiful and functional websites. I worked on various web technologies but ReactJs is my first pirority😍.</p>
-      <button className="text-emerald-500 tracking-wide text-xl rounded-full p-4 pl-14 pr-14 border-2 border-emerald-500 hover:bg-emerald-500 duration-500 hover:text-white ">Hire Me</button>
-  </div>
-</section>
+     <div>
+     <Zoom>
+        <div id='/' class="relative bg-zinc-800">
+        <div className="home h-screen"></div>
+        <div class="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
+
+
+      {/* here is the main content of home page */}
+
+      <h1 className='text-4xl pb-4 tracking-wide font-bold sm:text-6xl pb-9'>HDOBI <span className='text-emerald-500'> TAYLOR</span></h1>
+  <p className='text-center text-2xl sm:text-3xl'>
+  I am a {''}
+  <span className='border-b-2 border-emerald-500 font-bold'>
+  <Typical
+          loop={Infinity}
+          wrapper="b"
+          steps={[
+            'FreeLancer',
+            1000,
+            'Web Developer',
+            1000,
+            'UI/UX Design',
+            1000,
+          ]}
+        /> 
+  </span>
+  </p>
+
+
+
+          </div>
+       
+    </div>
+    </Zoom>
+     </div>
     )
 }
 

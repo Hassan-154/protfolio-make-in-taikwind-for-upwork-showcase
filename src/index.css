@@ -5,4 +5,82 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin: 0;
+    padding: 0
+  }
+  a:active {
+    color: black;
+  }
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer base {
+    li {
+      @apply p-1
+    }
+  }
+  .home{
+      background: linear-gradient(rgba(0, 0, 0, 0.650),rgba(0,0,0,0.650)),
+        url('./images/bg.jpg') no-repeat center / cover;
+        
+      }
+      .service__logo{
+        color: rgb(16 185 129);
+        
+      }
+  h1::before{
+    border-left: 6px solid green;
+    height: 100px;
+  }
+  h1::after{
+  border-left: 6px solid rgb(106, 124, 106);
+  height: 100px;
+  }
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  a{
+    font-family: Roboto;
+    cursor: pointer;
+    letter-spacing: 1px
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+  h1{
+    font-family: 'Playfair Display', serif;
+  }
+  h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+  p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+  }
+  span{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+  label{
+   
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+  
+  }
+  
+  
+  
+
+
+
 
