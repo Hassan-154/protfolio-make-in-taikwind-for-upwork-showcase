@@ -6,11 +6,14 @@ import { BsPerson,BsCardList } from 'react-icons/bs';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { AiOutlineCopy } from 'react-icons/ai';
 import { AiOutlineMail } from 'react-icons/ai';
-
+import { NavLink } from "react-router-dom";
 import { AiFillGithub, AiOutlineInstagram, AiFillFacebook, AiOutlineLinkedin  } from 'react-icons/ai';
 function NavBar(){
   
   const [isOpen, setIsOpen] = useState(false);
+
+  
+
 
     return (
       <div className='fixed text-lg z-20 uppercase'>
@@ -137,52 +140,52 @@ function NavBar(){
    {/*for desktop*/}
    <div className="h-screen bg-zinc-900 w-52 absolute inset-y-0 left-0 transform -translate-x-full md:relative xl:translate-x-0 transition duration-200 ease-in-out">
             <div className='w-52 h-screen flex'>
-            <nav className='flex flex-col text-white w-full divide-y divide-slate-700 text-[13px]'>
+            <nav className='flex flex-col w-full divide-y divide-slate-700 text-[13px]'>
             <div className=''>
                 <img className="" src={myImg}/>
-                <div class="absolute inset-x-0 bottom-0 h-10 w-full text-center bg-emerald-500 bg-opacity-50 top-40"><h3 className='pt-1.5'>HDOBI TAYLOR</h3></div>
+                <div class="absolute inset-x-0 bottom-0 h-10 w-full text-center bg-emerald-500 bg-opacity-50 top-40 text-[22px]"><h3 className='pt-1.5 text-white'>HDOBI TAYLOR</h3></div>
          </div>
 
 
-              <a href='/' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <BiHome className="mr-1" size={24}/><a>Home</a>
+              <a href='/' className="cursor-pointer hover:text-white text-center pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <BiHome className="mr-1.5" size={24}/>Home
               </div>
               </a>
 
-              <a href='/about' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <BsPerson className="mr-1" size={24}/><a>About me</a>
+              <a href='/about' className=" cursor-pointer hover:text-white text-center pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <BsPerson className="mr-1.5" size={24}/>About me
               </div>
               </a>
 
-              <a href='/resume' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <BsCardList className="mr-1" size={24}/><a>Resume</a>
+              <a href='/resume' className="cursor-pointer hover:text-white text-center pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <BsCardList className="mr-1.5" size={24}/>Resume
               </div>
               </a>
 
 
-              <a href='/portfolio' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <IoBriefcaseOutline className="mr-1" size={24}/><a>portfolio</a>
+              <a href='/portfolio' className="cursor-pointer hover:text-white  text-center pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <IoBriefcaseOutline className="mr-1.5" size={24}/>portfolio
               </div>
               </a>
 
-              <a href='/blog' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <AiOutlineCopy className="mr-1" size={24}/><a>Blog</a>
+              <a href='/blog' className="cursor-pointer text-center hover:text-white pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <AiOutlineCopy className="mr-1.5" size={24}/>Blog
               </div>
               </a>
 
               
-              <a href='/contact' className="hover:text-emerald-500 cursor-pointer text-center pb-3 pt-3 transition duration-200">
-              <div className='flex ml-12'>
-                <AiOutlineMail className="mr-1" size={24}/><a>Contact</a>
+              <a href='/contact' className="cursor-pointer text-center hover:text-white pb-3 pt-3 transition duration-200">
+              <div className='flex ml-11'>
+                <AiOutlineMail className="mr-1.5" size={24}/>Contact
               </div>
               </a>
 
-         
+
               <a>
               </a>
 
@@ -214,19 +217,29 @@ function NavBar(){
               <div className='absolute bottom-4'>
                 {/* here i need to put the social icon */}
                 <div class="flex ml-4">
-<div class="cursor-pointer mr-4">
-<AiOutlineLinkedin size="25"/>
+<div class="mr-4 cursor-pointer ">
+<a className='hover:text-white'><AiOutlineLinkedin size="24"/></a>
 </div>
-<div class="cursor-pointer mr-4">
-<AiFillFacebook size="25"/>
+<div class="mr-4 cursor-pointer ">
+<a className='hover:text-white'><AiFillFacebook size="24"/></a>
 </div>
-<div class="cursor-pointer mr-4">
-<AiOutlineInstagram size="25"/>
+<div class="mr-4 cursor-pointer ">
+<a className='hover:text-white'><AiOutlineInstagram size="24"/></a>
 </div>
-<div class="cursor-pointer mr-4">
-<AiFillGithub size="25"/>
+<div class="mr-4 cursor-pointer ">
+<a className='hover:text-white'><AiFillGithub size="24"/></a>
 </div>
 </div>
+
+
+{/* here is all right reserved pa tag */}
+<div className='text-[10px] leading-[8px] text-center pt-3'>
+<ul>
+  <li><a>2021 © Cosmos-Themes.</a></li>
+  <li><a>All Right Reserved.</a></li>
+</ul>
+</div>
+
               </div>
 
            </div>

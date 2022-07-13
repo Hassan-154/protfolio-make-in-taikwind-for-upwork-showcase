@@ -12,9 +12,6 @@
   a:active {
     color: black;
   }
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
   
   @layer base {
     li {
@@ -45,7 +42,10 @@
   a{
     font-family: Roboto;
     cursor: pointer;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    color: rgb(148, 148, 148);
+    font-weight: 600;
+ 
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
@@ -68,7 +68,7 @@
   span{
     font-family: 'Playfair Display', serif;
     letter-spacing: 1.5px;
-    font-weight: 500;
+    font-weight: 600;
   }
   label{
    
@@ -76,6 +76,25 @@
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
   
+  }
+  
+
+
+
+  @layer utilities {
+    @variants responsive {
+      .masonry-3-col {
+        column-count: 3;
+        column-gap: 2.5em;
+      }
+      .masonry-2-col {
+        column-count: 2;
+        column-gap: 2.5em;
+      }
+      .break-inside {
+        break-inside: avoid;
+      }
+    }
   }
   
   

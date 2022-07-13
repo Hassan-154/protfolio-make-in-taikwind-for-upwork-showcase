@@ -49,11 +49,11 @@ function Contact() {
 
 {/* this piece of code for send message button */}
 
-<div className='container flex item-center justify-center mt-8'>
-<a href="#_" class="relative inline-flex items-center justify-center px-3 py-2 overflow-hidden font-medium tracking-tighter text-white hover:text-black bg-zinc-800 group border-2 border-emerald-500">
+<div className='container flex item-center justify-center mt-8 uppercase text-[13px] cursor-pointer'>
+<span href="#_" class="relative inline-flex items-center justify-center px-3 py-2 overflow-hidden tracking-tighter  hover:text-black bg-zinc-800 group border-2 border-emerald-500">
 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-emerald-500 group-hover:w-56 group-hover:h-56"></span>
-<span class="relative">SEND MESSAGE</span>
-</a>
+<span class="relative hover:text-black font-bold">SEND MESSAGE</span>
+</span>
 </div>
 
 
