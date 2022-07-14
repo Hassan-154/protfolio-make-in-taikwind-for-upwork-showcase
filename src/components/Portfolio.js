@@ -45,7 +45,7 @@ function Portfolio() {
         <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
         <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
         <div className='flex item-center justify-center relative'>
-          <h1 className=''>1</h1>
+          <h1 className='mt-32 font-bold text-green-700'>React Sports Web App</h1>
         </div>
         </div>
           </div>
@@ -62,9 +62,9 @@ function Portfolio() {
       <div className='flex item-center justify-center'>
         <div className='w-full h-72 overflow-hidden relative rounded-2xl'>
         <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
+        <div className='absolute rounded-2xl inset-0 opacity-0  hover:bg-cyan-500 hover:opacity-50'>
         <div className='flex item-center justify-center relative'>
-          <h1 className=''>2</h1>
+          <h1 className=''>React Sports Web App</h1>
         </div>
         </div>
           </div>
