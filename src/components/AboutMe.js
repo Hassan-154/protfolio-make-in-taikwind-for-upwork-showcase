@@ -27,7 +27,7 @@ function AboutMe() {
                 {/* for about content */}
                 <div className=" text-left pt-12">
         {/* set up a flex container so we can have columns */}
-        <div className="colum lg:flex gap-6 ">
+        <div className="colum sm:flex gap-6 ">
           {/* first column set to use 3/4 of the width of the containpmner, with a regular space between each element */}
           <div className="lg:w-3/4 space-y-4">
             <h3 className="text-2xl font-bold">UI/UX Designer & Developer</h3>
@@ -38,7 +38,7 @@ function AboutMe() {
 
           </div>
           {/* second column using the remaining quarter */}
-          <div className="lg:w-1/4 space-y-2">
+          <div className="lg:w-1/3 space-y-2">
             <h3 className="text-2xl font-bold ">Personal Information</h3>
             <ul className='text-md'>
               <li className=''><span className='border-b-2 border-emerald-500'>Name</span> : Hdobi Taylor</li>
@@ -63,9 +63,9 @@ function AboutMe() {
           </div>
         </div>
    </div>
-   <div className=''>
-     <h3 className='text-2xl font-bold tracking-wide pt-16 pb-16'>SERVICES</h3>
-     <div class="grid grid-cols-4 gap-4">
+   <div className='pt-12'>
+     <h3 className='special-underline text-2xl font-bold tracking-wide pt-16 pb-16'>SERVICES</h3>
+     <div class="grid grid-cols-4 gap-4 pt-12">
   <div class="col-span-4 sm:col-span-2 md:col-span-1"><WebIcon className='service__logo' sx={{ fontSize: 60 }}/><h1 className='text-xl pb-1.5 pt-1.5 font-bold'>Web Development</h1><p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p></div>
   <div class="col-span-4 sm:col-span-2 md:col-span-1"><AppShortcutIcon className='service__logo' sx={{ fontSize: 60 }}/><h1 className='text-xl pb-1.5 pt-1.5 font-bold'>App Development</h1><p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p></div>
   <div class="col-span-4 sm:col-span-2 md:col-span-1"><DesignServicesIcon className='service__logo' sx={{ fontSize: 60 }}/><h1 className='text-xl pb-1.5 pt-1.5 font-bold'>UX/UI Designer</h1><p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p></div>

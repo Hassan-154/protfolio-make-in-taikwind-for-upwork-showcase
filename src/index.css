@@ -61,6 +61,11 @@
     font-family: 'Playfair Display', serif;
     font-weight: 600;
   }
+  h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
   p{
     font-family: 'Playfair Display', serif;
     font-weight: 500;
@@ -75,7 +80,6 @@
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
-  
   }
   
 

@@ -5,12 +5,36 @@
     list-style: none;
     text-decoration: none;
   }
-  .active, .btn:hover {
-    background-color: #666;
-    color: white;
-  }
 
-  
+.special-underline {
+  border-bottom:2px solid #bada55;
+  padding:0 10px;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.special-underline::before {
+  content:"";
+  height:6px;
+  width:2px;
+  background:#bada55;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.special-underline::after {
+  content:"";
+  height:6px;
+  width:2px;
+  background:#bada55;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
 
 
  

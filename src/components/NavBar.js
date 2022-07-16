@@ -140,7 +140,7 @@ function NavBar(){
    {/*for desktop*/}
    <div className="h-screen bg-zinc-900 w-52 absolute inset-y-0 left-0 transform -translate-x-full md:relative xl:translate-x-0 transition duration-200 ease-in-out">
             <div className='w-52 h-screen flex'>
-            <nav className='flex flex-col w-full divide-y divide-slate-700 text-[12px]'>
+            <nav className='flex flex-col w-full divide-y divide-slate-700 text-[11.5px]'>
             <div className=''>
                 <img className="" src={myImg}/>
                 <div class="absolute inset-x-0 bottom-0 h-10 w-full text-center bg-emerald-500 bg-opacity-50 top-40 text-[22px]"><h3 className='pt-1.5 text-white'>HDOBI TAYLOR</h3></div>
