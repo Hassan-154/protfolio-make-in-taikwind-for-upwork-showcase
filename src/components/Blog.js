@@ -1,41 +1,16 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import { Suspense, useState } from "react";
-import { motion } from "framer-motion";
+
+
+
 
 function Blog() {
 
 
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      animate:{ x: 100 },
-      transition: { delayChildren: 1 },
-      opacity: 1,
-    }
-  }
-  
-  const item = {
-    hidden: { opacity: 0 },
-    show: {
+  return <div className='h-screen w-full p-4 sm:p-8 lg:p-8 text-white bg-zinc-800' id="blog">
 
-      opacity: 1,
-    }
-  }
-  
+  <div className='max-w-[650px] mx-auto'>
 
-  return <div className='h-screen w-full text-white bg-slate-700' id="blog">
-
-<motion.ul
-    variants={container}
-    initial="hidden"
-    animate="show"
-  >
-    <motion.li animated={{ x: 100 }}variants={item}>the real value</motion.li>
-    <motion.li variants={item}>2</motion.li>
-  </motion.ul>
-
-
+  </div>
   </div>;
 }
 

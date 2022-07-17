@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import Zoom from 'react-reveal/Zoom';
 import { motion } from "framer-motion"
@@ -8,6 +8,16 @@ import Fade from 'react-reveal/Fade';
 import { FiPlus } from 'react-icons/fi';
 
 function Portfolio() {
+
+
+  const [click, setClick] = useState(true);
+
+  function hoverCard( ) {
+    setClick(false);
+  }
+  function leaveCard( ) {
+    setClick(true);
+  }
 
   
 
@@ -30,8 +40,8 @@ function Portfolio() {
 
 {/* this piece of code for portfolio menu */}
 
-<body class="antialiased mt-4">
-    <h3 class="mb-2 text-[22px]"  onClick={refreshPage}>Masonry Design with TailwindCss</h3>
+<body class="antialiased mt-12">
+    
     
 
     <div class="masonry-1-col sm:masonry-2-col lg:masonry-3-col"> 
@@ -41,11 +51,17 @@ function Portfolio() {
           <div class="break-inside mb-3 text-white">
           <div className='flex item-center justify-center'>
         <div className='w-full h-64  overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:opacity-100  hover:bg-emerald-700/80 '>
-        <motion.h3 whileHover={{ x: 0 }} transition={{ delay: 0 }}
-        className='w-full h-full text-black'>Sports Web <motion.FiPlus className="mr-1.5" size={24} whileHover={{ x: 0 }} transition={{ delay: 0 }} ></motion.FiPlus>
-        </motion.h3>
+        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg h-64' src='https://i.ibb.co/H7NrRTg/sports-web.png'/>
+        <div onMouseEnter={hoverCard} onMouseLeave={leaveCard} className='absolute rounded-2xl inset-0 opacity-0  hover:bg-emerald-800/80  ease-in duration-300 hover:opacity-100 ease-in duration-300'>
+        {/* here is the text animation part part */}
+        <div className=''>
+         <ul className="text-center justify-center">
+          <li className='text-[20px]'><h5 className={click ? "mb-4 ease-in duration-300" :"mt-4 ease-in duration-300"}>Sports Web</h5></li>
+          <li className='text-[15px]'><p className={click ? "mt-8 ease-in duration-300" :"mb-0 ease-in duration-300"}>React + Tailwind CSS + Framer Motion</p></li>
+          <li className='max-w-[100px] mx-auto mt-8 cursor-pointer'><FiPlus className={click ? "duration-300" :"transform rotate-180 ease-in duration-300"} size={80}/></li>
+         </ul>
+         
+        </div>
         </div>
           </div>
       </div> 
@@ -62,10 +78,7 @@ function Portfolio() {
         <div className='w-full h-72 overflow-hidden relative rounded-2xl'>
         <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
         <div className='absolute rounded-2xl inset-0 opacity-0  hover:bg-cyan-500 ease-in duration-300 hover:opacity-100 ease-in duration-300'>
-        <motion.h3 whileHover={{ x: 100 }} transition={{ delay: 0 }}
-        className='w-full h-full text-black'>
-        Sports Web
-        </motion.h3>
+     
         </div>
           </div>
       </div>
