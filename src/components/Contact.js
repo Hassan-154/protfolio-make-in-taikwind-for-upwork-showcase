@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from "react-router-hash-link";
-
+import { AiOutlineMail } from 'react-icons/ai';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -13,19 +13,19 @@ function Contact() {
   <div className='max-w-[1240px] mx-auto '>
   <div class="flex items-center justify-between">
   <h2 className='text-4xl font-bold text-emerald-500 '>Contact Me.</h2>
-  <MailOutlineIcon className='service__logo' sx={{ fontSize:50 }}/>
+  <AiOutlineMail className='service__logo' size={50}/>
 </div>
 
 <div class="divide-y-2 divide-gray-500 divide-dashed">
 <div class="text-center py-1"></div>
-<div class="text-center py-1"></div>
+<div class="text-center py-1 pb-8"></div>
 </div>
 
 {/* grid for name and email input box */}
 
-<h3 className='text-center text-white pt-10 pb-10 text-2xl '>LET'S TALK</h3>
+<h3 className='special-underline text-center text-white text-2xl '>LET'S TALK</h3>
 
-<div class="flex flex-col sm:flex-row sm:space-x-8 max-w-[650px] mx-auto">
+<div class="flex flex-col sm:flex-row sm:space-x-8 max-w-[650px] mx-auto  pt-6">
 <div class="basis-2/4">
 <label class="block text-white text-md font-bold mb-2">
       Name

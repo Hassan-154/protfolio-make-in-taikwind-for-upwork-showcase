@@ -4,7 +4,7 @@ import AppShortcutIcon from '@mui/icons-material/AppShortcut';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import CodeOffIcon from '@mui/icons-material/CodeOff';
 /*about heading icon*/
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import { BsPerson } from 'react-icons/bs';
 import Zoom from 'react-reveal/Zoom';
 function AboutMe() {
     return (
@@ -14,7 +14,7 @@ function AboutMe() {
 <div>
   <div class="flex items-center justify-between">
     <h2 className='text-4xl font-bold text-emerald-500'>About Me.</h2>
-    <PermIdentityIcon className="service__logo" sx={{ fontSize: 60 }}/>
+    <BsPerson className='service__logo' size={50}/>
   </div>
   
   
