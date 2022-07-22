@@ -2,6 +2,9 @@ import React from 'react';
 
 import { AiOutlineCopy } from 'react-icons/ai';
 
+import { BiTime } from 'react-icons/bi';
+
+
 
 function Blog() {
 
@@ -18,7 +21,8 @@ function Blog() {
 <div class="text-center py-1"></div>
 </div>
 
-{/* here is the blog menu */}
+
+
 <body class="antialiased mt-12">
     
     
@@ -27,33 +31,65 @@ function Blog() {
     
           {/* first grid item */}
 
-    
-          <div class="break-inside mb-3  text-white">
 
-<div className='flex item-center justify-center'>
-  <div className='w-full h-80 overflow-hidden relative rounded-2xl'>
-  <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-  <div className='absolute rounded-2xl inset-0 opacity-0  hover:bg-cyan-500 ease-in duration-300 hover:opacity-100 ease-in duration-300'>
-1
-  </div>
-    </div>
-</div>
-</div>
+          <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
+        </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
+        </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href='' className=''><span className="ml-1 mt-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
+      </div>
+      </div>
+
+
+
+          
+          
+ 
 
 
 
   {/* Second grid item */}
 
 
-      <div class="break-inside mb-3  text-white">
-
-      <div className='flex item-center justify-center'>
-        <div className='w-full h-72 overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0  hover:bg-cyan-500 ease-in duration-300 hover:opacity-100 ease-in duration-300'>
-     2
+  <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
         </div>
-          </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
+        </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href=''><span className="ml-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
       </div>
       </div>
 
@@ -65,17 +101,28 @@ function Blog() {
 
 
 
-      <div class="break-inside mb-3  text-white">
-
-      <div className='flex item-center justify-center'>
-        <div className='w-full h-96 overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
-        <div className='flex item-center justify-center relative'>
-          <h1 className=''>3</h1>
+      <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
         </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
         </div>
-          </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href=''><span className="ml-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
       </div>
       </div>
 
@@ -91,17 +138,28 @@ function Blog() {
 
 
 
-      <div class="break-inside mb-3 text-white">
-
-      <div className='flex item-center justify-center'>
-        <div className='w-full h-96 overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
-        <div className='flex item-center justify-center relative'>
-          <h1 className=''>4</h1>
+  <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
         </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
         </div>
-          </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href=''><span className="ml-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
       </div>
       </div>
 
@@ -119,18 +177,28 @@ function Blog() {
 
 
 
-
-
-      <div class="break-inside mb-3 text-white">
-      <div className='flex item-center justify-center'>
-        <div className='w-full h-80  overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
-        <div className='flex item-center justify-center relative'>
-          <h1 className=''>5</h1>
+  <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
         </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
         </div>
-          </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href=''><span className="ml-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
       </div>
       </div>
 
@@ -144,17 +212,28 @@ function Blog() {
 
 
 
-
-      <div class="break-inside mb-3 text-white">
-      <div className='flex item-center justify-center'>
-        <div className='w-full h-80  overflow-hidden relative rounded-2xl'>
-        <img className='absolute inset-0 object-cover rounded-2xl rounded-b-lg' src='https://images.unsplash.com/photo-1657204862338-356fec1c3f8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60'/>
-        <div className='absolute rounded-2xl inset-0 opacity-0 hover:bg-cyan-500 hover:opacity-80'>
-        <div className='flex item-center justify-center relative'>
-          <h1 className=''>6</h1>
+  <div class="break-inside mb-6  text-white text-center">
+      <div className="rounded overflow-hidden shadow-lg">
+        <div className="relative">
+            <img className="w-full" src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />
+            <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25" />
+     
+          <a><div className="text-sm absolute top-0 right-0 bg-emerald-500 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3">
+              <span className="font-bold">20</span>
+              <small>March</small>
+            </div></a>
         </div>
+        <div className="px-6 py-4">
+          <span className="text-lg inline-block text-emerald-500 font-bold">Best Pizza in Town</span>
+          <h3 className="pt-2 text-white">
+            The collection of best pizza images in Newyork city
+          </h3>
         </div>
-          </div>
+        <div className="px-6 pb-4 flex flex-row items-center">
+          <span href="#" className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
+          <BiTime className='text-emerald-500 mt-0.5' size={20}/>
+            <a href=''><span className="ml-1 text-white cursor-pointer hover:text-gray-500 italic">3 mins read.. .</span></a></span>
+        </div>
       </div>
       </div>
 
@@ -167,6 +246,15 @@ function Blog() {
     </div>
   </body>
 
+
+
+
+
+
+
+
+
+  
 
 </div>
 
