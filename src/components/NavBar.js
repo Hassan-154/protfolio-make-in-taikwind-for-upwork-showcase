@@ -13,8 +13,6 @@ function NavBar(){
   const [isOpen, setIsOpen] = useState(false);
 
   
-
-
     return (
       <div className='fixed text-lg z-20 uppercase'>
     
